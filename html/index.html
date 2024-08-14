@@ -1,202 +1,9 @@
 <html><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mon Blog Élégant - Articles</title>
-<style>
-    :root {
-        --primary-color: #3498db;
-        --secondary-color: #2c3e50;
-        --text-color: #333;
-        --background-color: #ecf0f1;
-        --card-background: #fff;
-    }
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: var(--text-color);
-        background-color: var(--background-color);
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        padding: 1rem 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        margin-bottom: 4rem;
-        margin-top: -30px;
-    }
-    .logo {
-        display: flex;
-        position: relative;
-        align-items: center;
-        width: 270px;
-        height: 190px;
-        margin-right: 10px;
-        object-fit:fill contain;
-        margin-top: -20px;
-      
-    }
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-    }
-    nav ul li {
-        margin-left: 20px;
-    }
-    nav ul li a {
-        color: var(--secondary-color);
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-    }
-    nav ul li a:hover {
-        color: var(--primary-color);
-    }
-    main {
-        max-width: 1200px;
-        margin: 7rem auto 2rem;
-        padding: 0 2rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    .article {
-        background-color: var(--card-background);
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        display: flex;
-        flex-direction: column;
-        margin-top: 4rem;
-    }
-    .article:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    }
-    .article-image {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    .article-content {
-        padding: 1.5rem;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-    }
-    .article h2 {
-        margin-top: 0;
-        color: var(--secondary-color);
-        font-size: 1.5rem;
-    }
-    .article-meta {
-        font-size: 0.9rem;
-        color: #777;
-        margin-bottom: 1rem;
-    }
-    .article p {
-        margin-bottom: 1rem;
-        flex-grow: 1;
-    }
-    .read-more {
-        display: inline-block;
-        background-color: var(--primary-color);
-        color: white;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        align-self: flex-start;
-    }
-    .read-more:hover {
-        background-color: var(--secondary-color);
-    }
-    footer {
-        text-align: center;
-        padding: 1rem;
-        background-color: var(--secondary-color);
-        color: white;
-    }
-    .article-page {
-        max-width: 800px;
-        margin: 7rem auto 2rem;
-        padding: 2rem;
-        background-color: var(--card-background);
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .article-page img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: 2rem auto;
-        border-radius: 10px;
-    }
-    .article-page h1 {
-        color: var(--secondary-color);
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-    .article-page .article-meta {
-        font-size: 1rem;
-        color: #777;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-    .article-page h2 {
-        color: var(--primary-color);
-        font-size: 1.8rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-    .article-page p {
-        margin-bottom: 1.5rem;
-        text-align: justify;
-    }
-    .back-button {
-        display: block;
-        text-align: center;
-        margin-top: 2rem;
-        color: var(--primary-color);
-        text-decoration: none;
-        font-weight: bold;
-    }
-    @media (max-width: 768px) {
-        header {
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem;
-        }
-        nav ul {
-            margin-top: 1rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0.5rem;
-        }
-        main {
-            grid-template-columns: 1fr;
-            padding: 0 1rem;
-        }
-        .article-page {
-            padding: 1rem;
-        }
-    }
-</style>
+<link href="../css/style.css" rel="stylesheet" />
+
+<title>Articles - Islam && Vérité</title>
 </head>
 <body>
     <header>
@@ -208,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="https://websim.ai/blog/about">À propos</a></li>
+                <li><a href="apropos.html">À propos</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -219,8 +26,8 @@
             <div class="article-content">
                 <h2>Introduction - L'Amour de Dieu pour chaque être humain</h2>
                 <div class="article-meta">Publié le 12 Août 2024 par Mehdi Ramdani</div>
-                <p>Découvrez en quelques phases simple et resumante de l'Amour de Dieu envers chacun d'entre nous.</p>
-                <a href="detail.html" class="">Lire la suite</a>
+                <p>Découvrez en quelques phases simple et résumante de l'Amour de Dieu envers chacun d'entre nous.</p>
+                <a href="#design-web-2023" class="read-more">Lire la suite</a>
             </div>
         </article>
         <article class="article">
@@ -228,8 +35,8 @@
             <div class="article-content">
                 <h2>Le but de la création de l'homme par Dieu</h2>
                 <div class="article-meta">Publié le 12 Août 2024 par Mehdi RAMDANI</div>
-                <p>Découvrez en quelques phases simple et resumante du but de Dieu pour l'homme lorsqu'il a conçu Adam("Adama").</p>
-                <a href="detail.html" class="">Lire la suite</a>
+                <p>Découvrez en quelques phases simple et résumante du but de Dieu pour l'homme lorsqu'il a conçu Adam("Adama").</p>
+                <a href="#ia-revolution-web" class="read-more">Lire la suite</a>
             </div>
         </article>
         <article class="article">
@@ -237,34 +44,34 @@
             <div class="article-content">
                 <h2>Péché originel d'Adam(Adama): la conséquence de la séparation de l'homme avec Dieu</h2>
                 <div class="article-meta">Publié le 12 Août 2024 par Mehdi RAMDANI</div>
-                <p>Découvrez en quelques phases simple et resumante de la conséquence du pêché que Adam avait commis envers Dieu , ce qui a entraîné la séparation entre le Dieu créateur et sa création.</p>
-                <a href="detail.html?" class="">Lire la suite</a>
+                <p>Découvrez en quelques phases simple et résumante de la conséquence du pêché que Adam avait commis envers Dieu , ce qui a entraîné la séparation entre le Dieu créateur et sa création.</p>
+                <a href="#optimisation-mobile" class="read-more">Lire la suite</a>
             </div>
         </article>
         <article class="article">
             <img src="https://picsum.photos/seed/article4/800/600" alt="Image d'illustration pour l'article sur la sécurité web" class="article-image">
             <div class="article-content">
-                <h2>Ingratitude et nature de pêché de l'homme</h2>
+                <h2>Ingratitude et nature de pêcheur de l'homme</h2>
                 <div class="article-meta">Publié le 12 Août 2024 par Mehdi RAMDANI</div>
-                <p>Découvrez en quelques phases simple et resumante de la nature de l'homme et de son ingratitude envers Dieu.</p>
-                <a href="detail.html" class="">Lire la suite</a>
+                <p>Découvrez en quelques phases simple et résumante de la nature de l'homme et de son ingratitude envers Dieu.</p>
+                <a href="#securite-web" class="read-more">Lire la suite</a>
             </div>
         </article>
         <article class="article">
             <img src="https://picsum.photos/seed/article4/800/600" alt="Image d'illustration pour l'article sur la sécurité web" class="article-image">
             <div class="article-content">
-                <h2>Ingratitude et nature de pêché de l'homme</h2>
+                <h2>Oeuvres de l'homme pour son salut</h2>
                 <div class="article-meta">Publié le 12 Août 2024 par Mehdi RAMDANI</div>
-                <p>Découvrez en quelques phases simple et resumante de la nature de l'homme et de son ingratitude envers Dieu.</p>
-                <a href="detail.html" class="">Lire la suite</a>
+                <p>Découvrez en quelques phases simple et résumante des critères du Salut dans l'éternité avec Dieu dans le Coran et ceux de la Bible.</p>
+                <a href="#securite-web" class="read-more">Lire la suite</a>
             </div>
         </article><article class="article">
             <img src="https://picsum.photos/seed/article4/800/600" alt="Image d'illustration pour l'article sur la sécurité web" class="article-image">
             <div class="article-content">
-                <h2>Ingratitude et nature de pêché de l'homme</h2>
+                <h2>Qui est Jesus-Christ - Sidna Issa</h2>
                 <div class="article-meta">Publié le 12 Août 2024 par Mehdi RAMDANI</div>
-                <p>Découvrez en quelques phases simple et resumante de la nature de l'homme et de son ingratitude envers Dieu.</p>
-                <a href="detail.html" class="">Lire la suite</a>
+                <p>Découvrez en quelques phases simple et resumante de l'identité coranique et bilique de la personne de Sidna Issa/Jésus Christ.</p>
+                <a href="#securite-web" class="read-more">Lire la suite</a>
             </div>
         </article>
     </main>

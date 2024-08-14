@@ -1,0 +1,173 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/apropos.css" rel="stylesheet" />
+    <title>À propos - Islam && Vérité</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --background-color: #ecf0f1;
+            --card-background: #fff;
+        }
+        body, html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo svg {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        main {
+            max-width: 800px;
+            margin: 100px auto 2rem;
+            padding: 2rem;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: var(--secondary-color);
+        }
+        .about-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+            }
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0.5rem;
+            }
+            main {
+                padding: 1rem;
+                margin-top: 150px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/islam-verite.png" alt="logo" class="logo">
+            </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <h1>À propos d'Islam && Vérité</h1>
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Espace de travail élégant avec ordinateur portable, café et plantes" class="about-image">
+            <p>Bienvenue sur Mon Blog Islam && Vérité, votre source d'inspiration pour le design web, le développement et les tendances technologiques. Fondé en 2020, notre blog s'est donné pour mission de partager des connaissances précieuses, des astuces pratiques et des réflexions innovantes sur le monde en constante évolution du web.</p>
+            
+            <h2>Notre Mission</h2>
+            <p>Chez Islam && Vérité, nous croyons que le design et la technologie ont le pouvoir de transformer le monde. Notre objectif est de vous fournir des informations de qualité, des tutoriels détaillés et des analyses approfondies pour vous aider à rester à la pointe de l'industrie du web.</p>
+            
+            <h2>Notre Équipe</h2>
+            <p>Derrière Islam && Vérité se cache une équipe passionnée de designers, développeurs et rédacteurs techniques. Ensemble, nous travaillons pour vous offrir un contenu de qualité, inspirant et éducatif.</p>
+            
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Sophie Martin, Fondatrice">
+                    <h3>Sophie Martin</h3>
+                    <p>Fondatrice & Rédactrice en chef</p>
+                </div>
+            </div>
+            
+            <h2>Rejoignez-nous dans cette aventure</h2>
+            <p>Que vous soyez un professionnel chevronné ou un débutant enthousiaste, Islam && Vérité est là pour vous accompagner dans votre parcours. Abonnez-vous à notre newsletter pour recevoir nos derniers articles et restez connecté avec notre communauté grandissante de passionnés du web.</p>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Islam && Vérité. Tous droits réservés.</p>
+        </footer>
+    </body></html>
