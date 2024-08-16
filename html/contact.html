@@ -28,7 +28,7 @@
         </section>
         <section class="contact-form">
             <h2>Envoyez-nous un message</h2>
-            <form  method="POST">
+            <form>
                 <label for="name">Nom:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -41,7 +41,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Envoyer</button>
+                <button onclick="sendMail()">Envoyer</button>
             </form>
         </section>
     </main>
@@ -51,10 +51,20 @@
     </footer>
 
     <script>
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
-            this.reset();
-        });
+        function sendMail(){ 
+        // Récupérer les valeurs des champs du formulaire
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    // Construire le lien mailto
+    var subject = encodeURIComponent("Message de " + name);
+    var body = encodeURIComponent("Nom: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
+
+    // Rediriger vers le lien mailto
+    window.location.href = "mailto:mramdani1993@outlook.fr?subject=" + subject + "&body=" + body;
+}
     </script>
+
+   
 </body></html>
