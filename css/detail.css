@@ -63,6 +63,7 @@
     }
     main {
         max-width: 800px;
+        min-width: 150px;
         margin: 6rem auto 2rem;
         padding: 2rem;
         background-color: var(--card-background);
@@ -173,10 +174,10 @@
         body{
             overflow-x: hidden;
         }
-        /* footer{
+        footer{
             width: 100%;
-            box-sizing: border-box;
-        } */
+            /* box-sizing: border-box; */
+        }
         
     }
     @media (max-width: 480px) {
@@ -201,12 +202,13 @@
         .cta-button {
             padding: 0.5rem 1rem;
         }
-        footer p {
+        /* footer p {
             font-size: 0.8rem;
-        }
+        } */
         
         footer {
             padding: 0.5rem;
+            width: 100%;
         }
         body{
             overflow-x: hidden;

@@ -202,6 +202,46 @@
     .article-page {
         padding: 1rem;
     }
+    footer {
+        /* padding: 0.5rem; */
+        width: 100%;
+    }
+    .article-page {
+        width: 500px; 
+        margin: 7rem auto 2rem;
+        padding: 2rem;
+        background-color: var(--card-background);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .article-page img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 2rem auto;
+        border-radius: 10px;
+    }
+    .article-page h1 {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .article-page .article-meta {
+        font-size: 1rem;
+        color: #777;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .article-page h2 {
+        color: var(--primary-color);
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .article-page p {
+        margin-bottom: 1.5rem;
+        text-align: justify;
 }
 
 /* Écrans inférieurs à 480px (pour très petits écrans) */
@@ -228,9 +268,47 @@
         padding: 0.4rem 0.8rem;
     }
     footer {
-        padding: 0.5rem;
+        /* padding: 0.5rem; */
+        width: 100%;
     }
+    .article-page {
+        width: 600px; 
+        margin: 7rem auto 2rem;
+        padding: 2rem;
+        background-color: var(--card-background);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .article-page img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 2rem auto;
+        border-radius: 10px;
+    }
+    .article-page h1 {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .article-page .article-meta {
+        font-size: 1rem;
+        color: #777;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .article-page h2 {
+        color: var(--primary-color);
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .article-page p {
+        margin-bottom: 1.5rem;
+        text-align: justify;
 }
+}}
 
     /* @media (max-width: 768px) {
         header {
@@ -253,4 +331,5 @@
         .article-page {
             padding: 1rem;
         }
-    } */
+
+     */
